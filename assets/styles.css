@@ -709,6 +709,79 @@ button {
     linear-gradient(145deg, #171b1d, #0e1011);
 }
 
+.toe-contact-cover {
+  background:
+    radial-gradient(circle at 77% 40%, rgba(207, 255, 70, 0.18), transparent 31%),
+    linear-gradient(145deg, #171b1d, #0e1011);
+}
+
+.toe-contact-cover .cover-promise span {
+  max-width: 145px;
+}
+
+.toe-contact-mark {
+  position: absolute;
+  z-index: 2;
+  top: 57px;
+  right: 22px;
+  width: 130px;
+  height: 112px;
+  transform: rotate(-4deg);
+}
+
+.toe-contact-foot {
+  position: absolute;
+  top: 6px;
+  right: 21px;
+  width: 42px;
+  height: 73px;
+  border: 1px solid rgba(207, 255, 70, 0.64);
+  border-radius: 24px 18px 14px 26px;
+  background:
+    radial-gradient(circle at 54% 18%, rgba(207, 255, 70, 0.28), transparent 38%),
+    rgba(8, 10, 11, 0.82);
+  box-shadow: 0 0 20px rgba(207, 255, 70, 0.1);
+  transform: rotate(27deg);
+}
+
+.toe-contact-foot::after {
+  position: absolute;
+  right: -26px;
+  bottom: -3px;
+  width: 43px;
+  height: 20px;
+  border: 1px solid rgba(207, 255, 70, 0.64);
+  border-left: 0;
+  border-radius: 0 18px 10px 0;
+  background: rgba(8, 10, 11, 0.82);
+  content: "";
+  transform: rotate(-8deg);
+}
+
+.toe-contact-floor {
+  position: absolute;
+  right: 4px;
+  bottom: 26px;
+  width: 118px;
+  border-top: 2px solid var(--accent);
+  box-shadow: 0 0 12px rgba(207, 255, 70, 0.32);
+}
+
+.toe-contact-mark small {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #899194;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 7px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.toe-contact-cover .catalog-preview {
+  object-position: 22% center;
+}
+
 .walk-speed-cover .cover-promise span {
   max-width: 120px;
 }
@@ -1558,6 +1631,10 @@ button {
 
 .catalog-card-walk-speed {
   order: -30;
+}
+
+.catalog-card-toe-contact {
+  order: -40;
 }
 
 .catalog-card-retarget {

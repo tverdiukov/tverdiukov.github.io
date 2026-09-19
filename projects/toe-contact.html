@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Toe Contact — a contact-aware toe recalculation workflow inside Tkv Animated Rig by Andrei Tverdiukov.">
+  <title>Toe Contact — Andrei Tverdiukov</title>
+  <link rel="stylesheet" href="../assets/styles.css?v=20260919-1">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body class="compact-case">
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Andrei Tverdiukov — Home">
+      <span class="brand-mark">AT</span>
+      <span>Andrei Tverdiukov</span>
+    </a>
+    <nav class="site-nav" aria-label="Project navigation">
+      <a href="#overview">Overview</a>
+      <a href="#workflow">Workflow</a>
+      <a href="../index.html">All work</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero page-shell" id="overview">
+      <div class="case-kicker reveal">
+        <span>Case study · 11</span>
+        <span>Feature inside Tkv Animated Rig</span>
+      </div>
+      <h1 class="reveal case-title-medium">Toe<br><span>Contact</span></h1>
+      <div class="case-summary reveal">
+        <p>A contact-aware toe recalculation workflow for keeping animated footwear above a horizontal floor while preserving natural toe-off.</p>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>Workflow design &amp; development</dd></div>
+          <div><dt>Built with</dt><dd>Python · Maya · Tkv Animated Rig</dd></div>
+          <div><dt>Tested on</dt><dd>Maya 2025 · macOS</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="hero-video-wrap page-shell reveal">
+      <div class="case-video-item">
+        <video class="hero-video" controls playsinline preload="metadata" poster="../media/tkv-animated-rig/web/toe-contact-poster.jpg?v=20260919-1">
+          <source src="../media/tkv-animated-rig/web/toe-contact-overview.mp4?v=20260919-1" type="video/mp4">
+        </video>
+        <div class="video-caption">
+          <span>Toe Contact workflow</span>
+          <span>00:49</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="compact-story page-shell" id="workflow">
+      <div class="compact-story-intro reveal">
+        <div>
+          <p class="eyebrow">Problem → solution</p>
+          <h2>Correct the contact.<br>Keep the motion.</h2>
+        </div>
+        <p>Animated toes can pass through the ground when footwear, keys and rig controls do not line up perfectly. Toe Contact recalculates only the requested frames, restores believable support and leaves natural airborne motion alone.</p>
+      </div>
+
+      <div class="compact-workflow-grid">
+        <article class="reveal">
+          <span>01 / Select frames</span>
+          <h3>Use the range already in focus</h3>
+          <p>Run the solve from selected Graph Editor keys, a Time Slider range or the current frame without rebuilding the shot setup.</p>
+        </article>
+        <article class="reveal">
+          <span>02 / Solve contact</span>
+          <h3>Keep the front of the foot above the floor</h3>
+          <p>The workflow derives the toe direction and scale per leg, then corrects the front footwear contact against a horizontal world floor.</p>
+        </article>
+        <article class="reveal">
+          <span>03 / Preserve toe-off</span>
+          <h3>Support only while it is reachable</h3>
+          <p>The toe stays supported near the ground, releases naturally in the air and preserves an intentionally raised pose. The complete operation is one Maya Undo step.</p>
+        </article>
+      </div>
+
+      <details class="technical-notes reveal">
+        <summary>Technical notes <span>Open details</span></summary>
+        <div class="technical-notes-grid">
+          <div>
+            <h3>Geometry-aware contact</h3>
+            <p>The solve uses the front shoe region when its geometry is reliable and falls back to captured contact data when it is not. Heel and midsole contact remain part of the Foot IK workflow.</p>
+          </div>
+          <div>
+            <h3>Animated Rig integration</h3>
+            <p>Toe Contact is a focused workflow inside Tkv Animated Rig, not a separate product. It can bake the result directly or work with the existing editable TOP and SIDE toe controls.</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="next-project page-shell reveal">
+      <span>End of case study</span>
+      <a href="../index.html">Back to all work <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer page-shell">
+    <span>Andrei Tverdiukov</span>
+    <span>Selected work · 2026</span>
+  </footer>
+</body>
+</html>
